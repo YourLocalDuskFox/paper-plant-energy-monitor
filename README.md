@@ -31,6 +31,8 @@ The ML itself was fairly easy once I had figured out which modeling style to use
 
 ## Files
 
-MP1_MQTT_Streamlit.py    the dashboard
-MP1.ipynb                training + the publisher used for testing
-energy_model.pkl         the trained classifier (joblib)
+MP1_sub.py          the Streamlit dashboard, subscribes to MQTT and plots energy
+send_new.py         simulates the paper plant, publishes JSON to the broker
+MP1.ipynb           trains the Random Forest on em_data.csv, saves the model
+em_data.csv         10,000 rows of historical plant telemetry (8 features + energy)
+energy_model.joblib WILL HAVE TO RUN TRAINING DATA OFF THE CSV YOURSELF.
