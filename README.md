@@ -17,7 +17,7 @@ The classifier is a Random Forest trained offline on historical plant data.
 - Public broker: `test.mosquitto.org:1883`
 
 ## Running it
-.
+
 ```bash
 pip install -r requirements.txt
 streamlit run MP1_MQTT_Streamlit.py
